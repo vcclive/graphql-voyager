@@ -9,6 +9,6 @@ npm-debug.log
 
 /lib
 /middleware
-/typings
+#/typings
 
 .idea
