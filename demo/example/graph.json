@@ -9,7 +9,14 @@
       "fields": [
         {
           "name": "id",
-          "type": "Int",
+          "type": {
+            "id": "TYPE::Pet::Int",
+            "name": "Int",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::Pet::id",
           "description": "",
           "typeWrappers": [
@@ -21,7 +28,14 @@
         },
         {
           "name": "name",
-          "type": "String",
+          "type": {
+            "id": "TYPE::Pet::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::Pet::name",
           "description": "",
           "typeWrappers": [
@@ -33,7 +47,14 @@
         },
         {
           "name": "photoUrls",
-          "type": "String",
+          "type": {
+            "id": "TYPE::Pet::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::Pet::photoUrls",
           "description": "PhotoURLs contain cute urls",
           "typeWrappers": [
@@ -46,7 +67,14 @@
         },
         {
           "name": "status",
-          "type": "String",
+          "type": {
+            "id": "TYPE::Pet::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::Pet::status",
           "description": "",
           "typeWrappers": [
@@ -67,7 +95,14 @@
             "fields": [
               {
                 "name": "id",
-                "type": "Int",
+                "type": {
+                  "id": "TYPE::Pet::Tag::Int",
+                  "name": "Int",
+                  "description": "",
+                  "kind": "SCALAR",
+                  "interfaces": [],
+                  "fields": []
+                },
                 "id": "FIELD::Pet::Tag::id",
                 "description": "",
                 "typeWrappers": [
@@ -79,7 +114,14 @@
               },
               {
                 "name": "name",
-                "type": "String",
+                "type": {
+                  "id": "TYPE::Pet::Tag::String",
+                  "name": "String",
+                  "description": "",
+                  "kind": "SCALAR",
+                  "interfaces": [],
+                  "fields": []
+                },
                 "id": "FIELD::Pet::Tag::name",
                 "description": "",
                 "typeWrappers": [
@@ -112,7 +154,14 @@
       "fields": [
         {
           "name": "id",
-          "type": "Int",
+          "type": {
+            "id": "TYPE::User::Int",
+            "name": "Int",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::id",
           "description": "",
           "typeWrappers": [
@@ -124,7 +173,14 @@
         },
         {
           "name": "username",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::username",
           "description": "",
           "typeWrappers": [
@@ -136,7 +192,14 @@
         },
         {
           "name": "first_name",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::first_name",
           "description": "",
           "typeWrappers": [
@@ -148,7 +211,14 @@
         },
         {
           "name": "last_name",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::last_name",
           "description": "",
           "typeWrappers": [
@@ -160,7 +230,14 @@
         },
         {
           "name": "email",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::email",
           "description": "",
           "typeWrappers": [
@@ -172,7 +249,14 @@
         },
         {
           "name": "password",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::password",
           "description": "",
           "typeWrappers": [
@@ -184,7 +268,14 @@
         },
         {
           "name": "phone",
-          "type": "String",
+          "type": {
+            "id": "TYPE::User::String",
+            "name": "String",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::phone",
           "description": "",
           "typeWrappers": [
@@ -196,7 +287,14 @@
         },
         {
           "name": "user_status",
-          "type": "Int",
+          "type": {
+            "id": "TYPE::User::Int",
+            "name": "Int",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::user_status",
           "description": "",
           "typeWrappers": [
@@ -208,7 +306,14 @@
         },
         {
           "name": "pet_ids",
-          "type": "Int",
+          "type": {
+            "id": "TYPE::User::Int",
+            "name": "Int",
+            "description": "",
+            "kind": "SCALAR",
+            "interfaces": [],
+            "fields": []
+          },
           "id": "FIELD::User::pet_ids",
           "description": "",
           "typeWrappers": [
@@ -223,7 +328,10 @@
     }
   },
   "rootId": "",
-  "edges": {
-    "FIELD::User::pet_ids": "TYPE::Pet"
-  }
+  "edges": [
+    {
+      "from": "FIELD::User::pet_ids",
+      "to": "TYPE::Pet"
+    }
+  ]
 }

@@ -1510,8 +1510,8 @@ function stringifyWrappers(wrappers) {
 function fixConstants(node) {
     for (var _i = 0, _a = node.fields; _i < _a.length; _i++) {
         var field = _a[_i];
-        if (typeof field.type == "string") {
-            switch (field.type) {
+        if (field.type.kind === "SCALAR") {
+            switch (field.type.name) {
                 case "Int":
                     field.type = scalars_["GraphQLInt"];
                     break;
@@ -1553,8 +1553,8 @@ function getDot(typeGraph, displayOptions) {
         }) + "\n      ";
     }
     function nodeEdges(edges) {
-        return Object.entries(edges).reduce(function (result, _a) {
-            var from = _a[0], to = _a[1];
+        return edges.reduce(function (result, _a) {
+            var from = _a.from, to = _a.to;
             return result + ("\n          \"TYPE::" + from.split('::')[1] + "\":\"" + port(from) + "\" -> \"TYPE::" + to.split('::')[1] + "\":\"" + port(to) + "\" [\n            id = \"" + from + " => " + to + "\"\n            label = \"" + from.split('::').splice(-2).join('.') + "\"\n          ]\n    ");
         }, "");
     }

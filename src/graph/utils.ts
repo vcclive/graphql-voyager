@@ -55,8 +55,8 @@ export function stringifyWrappers(wrappers) {
 
 export function fixConstants(node) {
   for (let field of node.fields) {
-    if (typeof field.type == "string") {
-      switch (field.type) {
+    if (field.type.kind === "SCALAR") {
+      switch (field.type.name) {
         case "Int":
           field.type = GraphQLInt
           break

@@ -59,7 +59,7 @@ export function getDot(typeGraph, displayOptions): string {
   }
 
   function nodeEdges(edges) {
-    return Object.entries(edges).reduce((result, [from, to]) => {
+    return edges.reduce((result, {from, to}) => {
       return result + `
           "TYPE::${from.split('::')[1]}":"${port(from)}" -> "TYPE::${(to as string).split('::')[1]}":"${port(to)}" [
             id = "${from} => ${to}"
